@@ -160,7 +160,7 @@ hr {
   display: block;
 
   position: relative;
-  margin: 0 20px;
+  margin-left: 40px;
   color: #fff;
   text-decoration: none;
   transition: color 0.1s linear;
@@ -782,14 +782,16 @@ hr {
   opacity: 1;
 }
 
-.work__galery {
-  margin-top: 40px;
+.work__galery .row {
+  max-width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
 
-  width: 1170px;
-  height: 735px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+
+.galery_block {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
 }
 
 
