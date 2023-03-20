@@ -955,19 +955,10 @@ hr {
 
 /*=======================================FOOTER==================================*/
 
-.col__footer {
-  display: block;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex-wrap: wrap;
-  min-height: 1px;
-  flex: 0 0 100%;
-  width: 100%;
-}
+
 
 .contact__details {
-  padding-left: 300px;
-  padding-top: 60px;
+  text-align: center;
 }
 
 .contacts__title {
@@ -980,6 +971,8 @@ hr {
   color: #8d959a;
   padding-bottom: 40px;
 }
+
+.my__contacts {}
 
 .my_contacts_ul {
   list-style: none;
@@ -998,29 +991,40 @@ hr {
   color: inherit;
 }
 
-.box_li {
-  position: relative;
+.my_contacts_ul {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column;
 }
 
-.box_li::before {
+.box_li:hover {
+  color: #ffcc74;
+}
+
+.box_li:hover:after {
   content: "";
   display: block;
-  width: 40px;
   height: 2px;
+  width: 100%;
   background-color: #ffcc74;
-  margin-right: 15px;
+}
+
+.row__footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col__footer1,
+.col__footer2,
+.col__footer3 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
 }
 
 .social {
-  padding-top: 10px;
-  position: relative;
+  margin-top: 30px;
   display: flex;
-  justify-content: flex-start;
 }
 
-.social a {
-  width: 80px;
-}
+.social div {}

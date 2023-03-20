@@ -183,14 +183,27 @@
         display: none;
     }
 
-    .col__footer {
-        display: block;
-        padding-right: 15px;
-        padding-left: 15px;
-        min-height: 1px;
-        flex: 0 0 100%;
-        width: 100%;
+    .icon__box__left {
+        left: 45%;
     }
+
+    .icon__box__right {
+        left: 45%;
+    }
+
+    .icon__box__left::before {
+        left: 130px;
+    }
+
+    .icon__box__right::before {
+        left: -130px;
+    }
+
+
+
+
+
+
 }
 
 
