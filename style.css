@@ -210,8 +210,8 @@ hr {
 .intro {
   scroll-margin-top: 3em;
   display: block;
-  height: 100vh;
-  background-image: url(/Images/hero.png);
+  min-height: 100vh;
+  background-image: url(./Images/hero.png);
   background-size: cover;
   position: relative;
 }
@@ -264,6 +264,9 @@ hr {
 
 .intro__btn {
   padding-top: 40px;
+
+
+  padding-bottom: 15px;
 }
 
 .intro__btn_ul {
@@ -1008,23 +1011,13 @@ hr {
   background-color: #ffcc74;
 }
 
-.row__footer {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+.social__ul {
+  padding-left: 0;
 }
 
-.col__footer1,
-.col__footer2,
-.col__footer3 {
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
+.social__ul li {
+  display: inline-block;
+  text-decoration: none;
+  width: 90px;
+  height: 90px;
 }
-
-.social {
-  margin-top: 30px;
-  display: flex;
-}
-
-.social div {}

@@ -200,7 +200,20 @@
     }
 
 
+    .col__footer1 {
+        flex: 0 0 15%;
+        width: 15%;
+    }
 
+    .col__footer2 {
+        flex: 0 0 70%;
+        width: 300px;
+    }
+
+    .col__footer3 {
+        flex: 0 0 15%;
+        width: 15%;
+    }
 
 
 
@@ -210,32 +223,15 @@
 /*  MAX WIDTH 575px */
 
 
-@media (max-width: 575px) {}
-
-
-/*  MAX HEIGHT 795px */
-
-@media (max-height: 795px) {
-    .intro__banner {
-        padding-top: 200px;
-    }
-}
-
-
-
 @media (max-width: 575px) {
     .container {
         max-width: 100%;
     }
-}
 
+    #nav__toggle:checked~.nav__box {
+        min-width: 450px;
+    }
 
-
-
-
-
-
-@media (max-width: 575px) {
     .intro__column1 {
         flex: 0 0 100%;
         max-width: 100%;
@@ -244,12 +240,7 @@
     .intro__column2 {
         display: none;
     }
-}
 
-
-
-
-@media (max-width: 575px) {
     .about__column1 {
         flex: 0, 0, 100%;
         max-width: 100%;
@@ -264,13 +255,79 @@
         margin-right: 0px;
     }
 
+    .row_margin_top_100 {
+        margin-top: 50px;
+    }
+
+    .backend__area {
+        left: 16%;
+    }
+
+    .galery__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .icon__box__left {
+        left: 45%;
+    }
+
+    .icon__box__right {
+        left: 45%;
+    }
+
+    .icon__box__left::before {
+        left: 125px;
+    }
+
+    .icon__box__right::before {
+        left: -125px;
+    }
 }
 
 
+@media (max-width: 496px) {
+    .container {
+        min-width: 420px;
+    }
+
+    #nav__toggle:checked~.nav__box {
+        min-width: 420px;
+    }
 
 
-@media (max-width: 575px) {
-    .row_margin_top_100 {
-        margin-top: 50px;
+    .hello {
+        font-size: 18px;
+    }
+
+    .intro__text .my__name {
+        font-size: 50px;
+    }
+
+    .intro__text h3 {
+        font-size: 22px;
+    }
+
+    .intro__btn {
+        padding-top: 60px;
+    }
+
+    .intro__btn a {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 990px) and (min-height: 1300px) {
+    .intro__banner {
+        padding-top: 700px;
+    }
+}
+
+
+/*  MAX HEIGHT 780px */
+
+@media (max-height: 780px) {
+    .intro__banner {
+        padding-top: 300px;
     }
 }
